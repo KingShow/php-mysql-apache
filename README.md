@@ -16,6 +16,7 @@ sudo vi php.ini
 session.save_path = "/tmp" 也需要开放
 ```
 ### apache 配置
+
 ```
 cd /etc/apache2/httpd.conf
 LoadModule userdir_module libexec/apache2/mod_userdir.so
@@ -25,7 +26,7 @@ LoadModule php7_module libexec/apache2/libphp7.so
 # Virtual hosts 开启虚拟主机配置
 Include /private/etc/apache2/extra/httpd-vhosts.conf
 
-DocumentRoot "/Users/oubunfei/Sites"
+DocumentRoot "/Users/oubunfei/Sites" //项目地址
 <Directory "/Users/oubunfei/Sites">
     #
     # Possible values for the Options directive are "None", "All",
