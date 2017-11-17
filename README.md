@@ -1,12 +1,12 @@
-## php-mysql-apache
+### php-mysql-apache
 mac php环境配置
-##hosts修改
+### hosts修改
 ```
 127.0.0.1    www.test.com
 127.0.0.1    wxdc
 
 ```
-##php.ini
+### php.ini
 ```
 cd /etc/  
 sudo cp php.ini.default php.ini  
@@ -15,7 +15,7 @@ sudo vi php.ini
 另需要配置phpredis 的扩展，下载完成在php.ini,中添加extension=redis.so
 session.save_path = "/tmp" 也需要开放
 ```
-##apache 配置
+### apache 配置
 ```
 cd /etc/apache2/httpd.conf
 LoadModule userdir_module libexec/apache2/mod_userdir.so
@@ -56,7 +56,7 @@ DocumentRoot "/Users/oubunfei/Sites"
 </Directory>
 DocumentRoot :是项目的指向地址
 ```
-##虚拟主机
+### 虚拟主机
 ```
 cd /etc/apache2/extra/httpd-vhosts.conf
 
